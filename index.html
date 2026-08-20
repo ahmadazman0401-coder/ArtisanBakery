@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Small-batch cakes, pastries, bread and cookies from a warm Malaysian artisan bakery.">
+  <meta name="theme-color" content="#FFF8EA">
+  <title>Crumb &amp; Co. | Malaysian Artisan Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&amp;family=DM+Serif+Display:ital@0;1&amp;family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Crumb and Company home">
+      <span class="brand-seal" aria-hidden="true">C</span>
+      <span><strong>Crumb &amp; Co.</strong><small>Small-batch bakery</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+      <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#menu">Menu</a>
+      <a href="#today">Today’s bakes</a>
+      <a href="#custom-cake">Custom cakes</a>
+      <a href="#story">Our bake</a>
+      <a href="#delivery">Pickup &amp; delivery</a>
+    </nav>
+    <button class="header-order" type="button" data-whatsapp-direct>Order on WhatsApp <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="packaging-label">
+          <span class="hand-note">Made fresh, not rushed</span>
+          <span class="batch-number">Batch no. ___</span>
+        </div>
+        <p class="eyebrow">A little neighbourhood bakery · Malaysia</p>
+        <h1 id="hero-title">Baked slow.<br><em>Eaten fast.</em></h1>
+        <p class="hero-lead">Freshly baked cakes, pastries and artisan favourites made in small batches.</p>
+        <div class="hero-actions">
+          <a class="button button-red" href="#menu">View today’s menu <span aria-hidden="true">↓</span></a>
+          <button class="button button-paper" type="button" data-whatsapp-direct>Order on WhatsApp</button>
+        </div>
+        <ul class="hero-notes" aria-label="Ordering highlights">
+          <li><span>01</span> Fresh batch</li>
+          <li><span>02</span> Made to order</li>
+          <li><span>03</span> Pickup / delivery</li>
+        </ul>
+      </div>
+
+      <div class="hero-photo">
+        <img src="assets/images/hero/bakery-counter.webp" alt="Artisan sourdough, croissants and a fruit tart on a warm bakery counter" width="1700" height="957" fetchpriority="high">
+        <span class="fresh-stamp"><b>Fresh</b><i>small batch</i><b>Today</b></span>
+        <span class="hero-sticker">Butter<br>makes it<br>better!</span>
+      </div>
+      <div class="hero-scribble" aria-hidden="true">good things take time →</div>
+    </section>
+
+    <div class="breadline" aria-hidden="true">
+      <div><span>CAKES</span><i>✦</i><span>PASTRIES</span><i>✦</i><span>BREAD</span><i>✦</i><span>COOKIES</span><i>✦</i><span>SMALL BATCH</span><i>✦</i><span>CAKES</span><i>✦</i><span>PASTRIES</span><i>✦</i><span>BREAD</span><i>✦</i><span>COOKIES</span><i>✦</i><span>SMALL BATCH</span><i>✦</i></div>
+    </div>
+
+    <section class="menu-section section" id="menu" aria-labelledby="menu-title">
+      <div class="menu-heading reveal">
+        <div>
+          <span class="hand-note">Pick something delicious</span>
+          <h2 id="menu-title">The good<br>stuff.</h2>
+        </div>
+        <div class="menu-intro">
+          <p>Sample products and availability are shown for layout purposes. Replace them with the bakery’s real menu before publishing.</p>
+          <span class="paper-tag">Prices marked RM --- are placeholders</span>
+        </div>
+      </div>
+
+      <div class="menu-filters reveal" role="group" aria-label="Filter bakery products">
+        <button class="active" type="button" data-filter="all">Everything</button>
+        <button type="button" data-filter="cakes">Cakes</button>
+        <button type="button" data-filter="pastries">Pastries</button>
+        <button type="button" data-filter="bread">Bread</button>
+        <button type="button" data-filter="cookies">Cookies</button>
+        <button type="button" data-filter="seasonal">Seasonal</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product product-large reveal" data-category="pastries">
+          <div class="product-image"><img src="assets/images/products/croissant.webp" alt="Flaky butter croissants, one cut open to show the layers" width="1536" height="1024" loading="lazy"><span class="sticker bestseller">Best seller</span><span class="availability available">Available</span></div>
+          <div class="product-info"><div><span class="product-category">Pastries</span><h3>Butter Croissant</h3><p>Deeply flaky layers with a crisp golden shell.</p></div><div class="product-order"><span class="product-price">RM --- <small>placeholder</small></span><button type="button" data-order-product="Butter Croissant">Order this <span>→</span></button></div></div>
+        </article>
+
+        <article class="product product-tall reveal" data-category="cakes">
+          <div class="product-image"><img src="assets/images/products/burnt-cheesecake.webp" alt="Caramelized burnt cheesecake with a slice removed" width="1536" height="1024" loading="lazy"><span class="sticker fresh-today">Fresh today</span><span class="availability preorder">Pre-order</span></div>
+          <div class="product-info"><div><span class="product-category">Cakes</span><h3>Burnt Cheesecake</h3><p>Caramelized top and a rich, creamy centre.</p></div><div class="product-order"><span class="product-price">RM --- <small>placeholder</small></span><button type="button" data-order-product="Burnt Cheesecake">Order this <span>→</span></button></div></div>
+        </article>
+
+        <article class="product reveal" data-category="bread">
+          <div class="product-image"><img src="assets/images/products/sourdough.webp" alt="Scored artisan sourdough with an open crumb slice" width="1536" height="1024" loading="lazy"><span class="availability available">Available</span></div>
+          <div class="product-info"><div><span class="product-category">Bread</span><h3>Country Sourdough</h3><p>Slow-fermented loaf with a bold, crisp crust.</p></div><div class="product-order"><span class="product-price">RM --- <small>placeholder</small></span><button type="button" data-order-product="Country Sourdough">Order this <span>→</span></button></div></div>
+        </article>
+
+        <article class="product product-offset reveal" data-category="pastries">
+          <div class="product-image"><img src="assets/images/products/cinnamon-rolls.webp" alt="Soft glazed cinnamon rolls on a baking tray" width="1536" height="1024" loading="lazy"><span class="sticker bestseller">Best seller</span><span class="availability soldout">Sold out</span></div>
+          <div class="product-info"><div><span class="product-category">Pastries</span><h3>Cinnamon Roll</h3><p>Soft swirls, warm spice and a glossy finish.</p></div><div class="product-order"><span class="product-price">RM --- <small>placeholder</small></span><button type="button" disabled aria-disabled="true">Sold out</button></div></div>
+        </article>
+
+        <article class="product product-wide reveal" data-category="cakes">
+          <div class="product-image"><img src="assets/images/products/chocolate-cake.webp" alt="Tall chocolate layer cake with ganache swirls" width="1536" height="1024" loading="lazy"><span class="availability preorder">Pre-order</span></div>
+          <div class="product-info"><div><span class="product-category">Cakes</span><h3>Chocolate Celebration Cake</h3><p>Moist chocolate layers with smooth ganache. Size and design to confirm.</p></div><div class="product-order"><span class="product-price">RM --- <small>placeholder</small></span><button type="button" data-order-product="Chocolate Celebration Cake">Order this <span>→</span></button></div></div>
+        </article>
+
+        <article class="product reveal" data-category="cookies">
+          <div class="product-image"><img src="assets/images/products/chocolate-chip-cookies.webp" alt="Chunky chocolate chip cookies with one broken open" width="1536" height="1024" loading="lazy"><span class="availability available">Available</span></div>
+          <div class="product-info"><div><span class="product-category">Cookies</span><h3>Chunky Choc Chip</h3><p>Crisp edges, soft centre and generous chocolate chunks.</p></div><div class="product-order"><span class="product-price">RM --- <small>placeholder</small></span><button type="button" data-order-product="Chunky Chocolate Chip Cookies">Order this <span>→</span></button></div></div>
+        </article>
+
+        <article class="product product-tall reveal" data-category="seasonal pastries">
+          <div class="product-image"><img src="assets/images/products/strawberry-danish.webp" alt="Golden strawberry custard danishes" width="1536" height="1024" loading="lazy"><span class="sticker fresh-today">Seasonal</span><span class="availability available">Available</span></div>
+          <div class="product-info"><div><span class="product-category">Seasonal</span><h3>Strawberry Danish</h3><p>Laminated pastry, custard and fresh berries.</p></div><div class="product-order"><span class="product-price">RM --- <small>placeholder</small></span><button type="button" data-order-product="Seasonal Strawberry Danish">Order this <span>→</span></button></div></div>
+        </article>
+
+        <article class="product reveal" data-category="cakes">
+          <div class="product-image"><img src="assets/images/products/custom-cake.webp" alt="Handcrafted pastel celebration cake with piped flowers and cherries" width="1536" height="1024" loading="lazy"><span class="availability preorder">Made to order</span></div>
+          <div class="product-info"><div><span class="product-category">Custom cakes</span><h3>Your Celebration Cake</h3><p>Occasion, flavour and design tailored after confirmation.</p></div><div class="product-order"><span class="product-price">Quote only</span><a href="#custom-cake">Plan yours <span>→</span></a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="today-section" id="today" aria-labelledby="today-title">
+      <div class="counter-heading reveal">
+        <span class="counter-ticket">Counter list · update daily</span>
+        <h2 id="today-title">Today’s bakes</h2>
+        <p>Swipe the counter <span aria-hidden="true">→</span></p>
+      </div>
+      <div class="counter-scroll">
+        <article class="counter-item"><span class="counter-number">01</span><img src="assets/images/products/croissant.webp" alt="Butter croissant" width="1536" height="1024" loading="lazy"><div><h3>Croissant</h3><span class="available">Available</span></div></article>
+        <article class="counter-item"><span class="counter-number">02</span><img src="assets/images/products/sourdough.webp" alt="Artisan sourdough loaf" width="1536" height="1024" loading="lazy"><div><h3>Sourdough</h3><span class="available">Available</span></div></article>
+        <article class="counter-item"><span class="counter-number">03</span><img src="assets/images/products/cinnamon-rolls.webp" alt="Cinnamon rolls" width="1536" height="1024" loading="lazy"><div><h3>Cinnamon Roll</h3><span class="soldout">Sold out</span></div></article>
+        <article class="counter-item"><span class="counter-number">04</span><img src="assets/images/products/burnt-cheesecake.webp" alt="Burnt cheesecake" width="1536" height="1024" loading="lazy"><div><h3>Burnt Cheesecake</h3><span class="preorder">Pre-order</span></div></article>
+        <article class="counter-item"><span class="counter-number">05</span><img src="assets/images/products/chocolate-cake.webp" alt="Chocolate layer cake" width="1536" height="1024" loading="lazy"><div><h3>Chocolate Cake</h3><span class="preorder">Pre-order</span></div></article>
+      </div>
+      <p class="counter-note">Availability shown is placeholder content. Connect it to the bakery’s daily updates before launch.</p>
+    </section>
+
+    <section class="custom-cake section" id="custom-cake" aria-labelledby="cake-title">
+      <div class="cake-photo reveal">
+        <img src="assets/images/products/custom-cake.webp" alt="Pastel custom celebration cake" width="1536" height="1024" loading="lazy">
+        <span class="cake-stamp"><b>Made for</b><i>your moment</i></span>
+      </div>
+      <div class="cake-content reveal">
+        <span class="hand-note">A cake with your name on it</span>
+        <h2 id="cake-title">Let’s make<br>your cake.</h2>
+        <p>Share the basics below and we’ll prepare a WhatsApp enquiry. Design, price and availability still need confirmation from the bakery.</p>
+        <form class="cake-form" id="cake-form">
+          <div class="field"><label for="cake-name">Your name</label><input id="cake-name" name="name" type="text" autocomplete="name" required placeholder="Name"></div>
+          <div class="field"><label for="cake-whatsapp">WhatsApp</label><input id="cake-whatsapp" name="whatsapp" type="tel" autocomplete="tel" required placeholder="012 345 6789"></div>
+          <div class="field"><label for="occasion">Occasion</label><select id="occasion" name="occasion" required><option value="">Choose occasion</option><option>Birthday</option><option>Anniversary</option><option>Baby celebration</option><option>Graduation</option><option>Corporate</option><option>Other</option></select></div>
+          <div class="field"><label for="cake-size">Cake size</label><select id="cake-size" name="size" required><option value="">Choose size</option><option>Size option 1 — confirm</option><option>Size option 2 — confirm</option><option>Size option 3 — confirm</option><option>Not sure — please advise</option></select></div>
+          <div class="field"><label for="flavour">Flavour</label><input id="flavour" name="flavour" type="text" required placeholder="Flavour preference"></div>
+          <div class="field"><label for="cake-date">Date needed</label><input id="cake-date" name="date" type="date" required></div>
+          <div class="field"><label for="theme">Theme / colours</label><input id="theme" name="theme" type="text" placeholder="Describe the look"></div>
+          <div class="field"><label for="budget">Budget</label><select id="budget" name="budget" required><option value="">Choose placeholder range</option><option>Below RM ---</option><option>RM --- to RM ---</option><option>Above RM ---</option><option>Not sure yet</option></select></div>
+          <div class="field field-full"><label for="reference-note">Reference image note</label><textarea id="reference-note" name="reference" rows="3" placeholder="Mention that you have a reference image; send it directly in WhatsApp after opening the chat."></textarea></div>
+          <button class="button button-red field-full" type="submit">Request custom cake <span aria-hidden="true">→</span></button>
+          <p class="form-note field-full">Submitting prepares a WhatsApp message. It does not confirm an order.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="story-section section" id="story" aria-labelledby="story-title">
+      <div class="story-title reveal"><span class="hand-note">The messy, buttery bit</span><h2 id="story-title">From flour<br>to your table.</h2><p>Not a polished corporate story. Just ingredients, patient hands and the moment the kitchen starts smelling incredible.</p></div>
+      <div class="story-steps">
+        <article class="story-step story-one reveal"><div class="story-photo"><img src="assets/images/story/ingredients.webp" alt="Flour, butter, eggs, sugar and berries arranged on a worktop" width="1536" height="1024" loading="lazy"><span>01</span></div><div><span class="hand-note">Start honest</span><h3>Good ingredients</h3><p>Ingredient source and product details are placeholders for the bakery to confirm.</p></div></article>
+        <article class="story-step story-two reveal"><div class="story-photo"><img src="assets/images/story/shaping-dough.webp" alt="Baker's hands shaping enriched dough" width="1536" height="1024" loading="lazy"><span>02</span></div><div><span class="hand-note">Fold, rest, repeat</span><h3>Made by hand</h3><p>Replace this with the business’s genuine process and preparation story.</p></div></article>
+        <article class="story-step story-three reveal"><div class="story-photo"><img src="assets/images/hero/bakery-counter.webp" alt="Finished artisan bread and pastries ready on the counter" width="1700" height="957" loading="lazy"><span>03</span></div><div><span class="hand-note">The best part</span><h3>Ready for you</h3><p>Freshness, batch timing and pickup details should be confirmed before publishing.</p></div></article>
+      </div>
+    </section>
+
+    <section class="order-process section" aria-labelledby="process-title">
+      <div class="process-heading reveal"><span class="counter-ticket">How ordering works</span><h2 id="process-title">You choose.<br>We bake.</h2></div>
+      <ol class="process-list">
+        <li class="reveal"><span>01</span><strong>Choose</strong><small>Pick from the menu</small></li>
+        <li class="reveal"><span>02</span><strong>Confirm date</strong><small>Check availability</small></li>
+        <li class="reveal"><span>03</span><strong>Payment</strong><small>Business to confirm method</small></li>
+        <li class="reveal"><span>04</span><strong>Bake</strong><small>Made for your order</small></li>
+        <li class="reveal"><span>05</span><strong>Pickup / delivery</strong><small>Choose arrangement</small></li>
+      </ol>
+    </section>
+
+    <section class="delivery-section section" id="delivery" aria-labelledby="delivery-title">
+      <div class="delivery-heading reveal"><span class="hand-note">Before you order</span><h2 id="delivery-title">Pickup,<br>delivery &amp;<br>the fine print.</h2><p>Every detail here is intentionally marked for confirmation. Do not replace it with assumptions.</p></div>
+      <div class="delivery-board reveal">
+        <div><span>Self pickup</span><strong>Location placeholder</strong><small>Add full address and collection instructions</small></div>
+        <div><span>Delivery areas</span><strong>Area list placeholder</strong><small>Confirm postcode / distance coverage</small></div>
+        <div><span>Delivery fee</span><strong>RM --- placeholder</strong><small>State calculation or third-party arrangement</small></div>
+        <div><span>Lead time</span><strong>— days placeholder</strong><small>Separate standard and custom cake orders</small></div>
+        <div><span>Operating days</span><strong>Days / hours placeholder</strong><small>Include closed day</small></div>
+        <div><span>Order cutoff</span><strong>Time placeholder</strong><small>Confirm same-day or next-day rules</small></div>
+      </div>
+      <div class="food-notes reveal">
+        <p><b>Halal status:</b> [BUSINESS TO CONFIRM]</p>
+        <p><b>Allergen information:</b> Placeholder — list wheat, dairy, eggs, nuts and cross-contact information as applicable.</p>
+      </div>
+      <div class="delivery-actions reveal"><button class="button button-cocoa" type="button" data-whatsapp-direct>Ask on WhatsApp</button><a class="button button-outline" href="#" data-placeholder-link="Pickup map">View pickup location</a></div>
+    </section>
+
+    <section class="instagram-section" aria-labelledby="instagram-title">
+      <div class="instagram-heading reveal"><span>@YOURBAKERYHANDLE</span><h2 id="instagram-title">Fresh from<br>the feed.</h2><a href="#" data-placeholder-link="Instagram profile">Follow on Instagram ↗</a></div>
+      <div class="instagram-grid">
+        <figure class="reveal"><img src="assets/images/products/croissant.webp" alt="Croissants for the bakery gallery" width="1536" height="1024" loading="lazy"></figure>
+        <figure class="reveal"><img src="assets/images/products/custom-cake.webp" alt="Custom cake for the bakery gallery" width="1536" height="1024" loading="lazy"></figure>
+        <figure class="reveal"><img src="assets/images/story/shaping-dough.webp" alt="Dough shaping process for the bakery gallery" width="1536" height="1024" loading="lazy"></figure>
+        <figure class="reveal"><img src="assets/images/products/chocolate-chip-cookies.webp" alt="Chocolate chip cookies for the bakery gallery" width="1536" height="1024" loading="lazy"></figure>
+        <figure class="reveal"><img src="assets/images/products/strawberry-danish.webp" alt="Strawberry danishes for the bakery gallery" width="1536" height="1024" loading="lazy"></figure>
+        <figure class="reveal"><img src="assets/images/products/sourdough.webp" alt="Sourdough for the bakery gallery" width="1536" height="1024" loading="lazy"></figure>
+        <figure class="reveal"><img src="assets/images/products/chocolate-cake.webp" alt="Chocolate cake for the bakery gallery" width="1536" height="1024" loading="lazy"></figure>
+        <figure class="reveal"><img src="assets/images/products/cinnamon-rolls.webp" alt="Cinnamon rolls for the bakery gallery" width="1536" height="1024" loading="lazy"></figure>
+        <figure class="reveal"><img src="assets/images/products/burnt-cheesecake.webp" alt="Burnt cheesecake for the bakery gallery" width="1536" height="1024" loading="lazy"></figure>
+      </div>
+      <p class="instagram-note">Demo gallery — replace with approved Instagram photography and a real profile link.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div><a class="brand" href="#top"><span class="brand-seal">C</span><span><strong>Crumb &amp; Co.</strong><small>Small-batch bakery</small></span></a><p>Freshly baked cakes, pastries and artisan favourites made in small batches.</p></div>
+      <div class="footer-links"><span>Browse</span><a href="#menu">Menu</a><a href="#today">Today’s bakes</a><a href="#custom-cake">Custom cakes</a></div>
+      <div class="footer-links"><span>Order</span><a href="#delivery">Pickup &amp; delivery</a><a href="#" data-placeholder-link="Instagram profile">Instagram</a><button type="button" data-whatsapp-direct>WhatsApp</button></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Crumb &amp; Co.</span><span>Demo website · Replace placeholders before publishing.</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <button class="whatsapp-float" type="button" data-whatsapp-direct><span>WA</span><b>Order on WhatsApp</b></button>
+  <button class="mobile-order" type="button" data-whatsapp-direct><span>WA</span> Order on WhatsApp</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">JavaScript is needed for menu filtering and WhatsApp ordering. The full menu remains visible without it.</p></noscript>
+  <script src="script.js"></script>
+</body>
+</html>
